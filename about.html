@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/png" href="./assets/company/favicon.png">
+    <script src="./script.js"></script>
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img class="logo" src="./assets/company/hotbeansweb-logo.png"></a>
+        <nav>
+            <ul class="nav_bar">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./hiring.html">We Are Hiring!</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li class="main_page"><a href="./about.html">About</a></li>
+                <li class="icon" onclick=showSidebar() ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <ul class="side_bar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./hiring.html">We Are Hiring!</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li class="main_page"><a href="./about.html">About</a></li>
+                <a class="side_bar-cta" href="./courses.html">Courses</a>
+            </ul>
+        </nav>
+        <a class="cta" href="./courses.html">Courses</a>
+    </header>
+    <div class="about-container">
+        <h1>About Us</h1>
+        <h2>Who we are</h2>
+        <p>Hot Beans Web is a growing website development company, known for their innovation and high performance. 
+            The collaborative effort of our skilled developers, designers, and strategists ensures the delivery of outstanding 
+            digital solutions tailored to our clients' specific requirements.</p>
+        <h2>Our Mission</h2>
+        <p>We strive to support businesses by delivering high-quality web development services that boost their online visibility 
+            and drive traffic. Our dedication lies in ensuring exceptional performance, originality and expansion in all our 
+            endeavors.</p>
+        <h2>Our Values</h2>
+        <ul>
+            <li>Innovation: We continuously explore new technologies and methodologies to stay ahead in the web development landscape.</li>
+            <li>Quality: We deliver high-quality products and services that exceed our clients' expectations.</li>
+            <li>Collaboration: We believe in the power of teamwork and open communication to achieve the best results.</li>
+            <li>Integrity: We maintain the highest standards of integrity and transparency in our operations.</li>
+            <li>Customer Focus: Our clients are at the heart of everything we do, and we strive to build long-lasting relationships based on trust and satisfaction.</li>
+        </ul>
+        <h2>Our Journey</h2>
+        <p>From our humble beginnings, we have developed into a top web development firm with a wide range of accomplished 
+            projects under our belt. Our quest for excellence and our enthusiasm for expanding the realm of what is feasible 
+            in web development has defined our path.</p>
+        <h2>Join Our Team</h2>
+        <p>We are constantly searching for bright, driven people to join our team. Hot Beans Web is the ideal destination 
+            for web developers, designers, and strategists seeking a stimulating and fulfilling job. Take a look at our 
+            available positions and join our creative, energetic team.</p>
+    </div>
+    <div class="background-container">
+        <div class="coding-logos">
+            <img src="./assets/coding-logos/html-logo.png" alt="HTML Logo">
+            <img src="./assets/coding-logos/css-logo.png" alt="CSS Logo">
+            <img src="./assets/coding-logos/javascript-logo.png" alt="JavaScript Logo">
+            <img src="./assets/coding-logos/react-logo.png" alt="React Logo">
+            <img src="./assets/coding-logos/vue-logo.png" alt="Vue Logo">
+            <img src="./assets/coding-logos/angular-logo.png" alt="Angular Logo">
+            <img src="./assets/coding-logos/bootsrap-logo.png" alt="Bootstrap Logo">
+            <img src="./assets/coding-logos/gitlab-logo.png" alt="GitLab Logo">
+            <img src="./assets/coding-logos/node-logo.png" alt="Node Logo">
+            <img src="./assets/coding-logos/git-logo.png" alt="Git Logo">
+            <img src="./assets/coding-logos/sketch-logo.png" alt="Sketch Logo">
+            <img src="./assets/coding-logos/java-logo.png" alt="Java Logo">
+            <img src="./assets/coding-logos/github-logo.png" alt="GitHub Logo">
+            <img src="./assets/coding-logos/python-logo.png" alt="Python Logo">
+            <img src="./assets/coding-logos/figma-logo.png" alt="Figma Logo">
+            <img src="./assets/coding-logos/php-logo.png" alt="Php Logo">
+            <img src="./assets/coding-logos/mongodb-logo.png" alt="MongoDB Logo">
+            <img src="./assets/coding-logos/jquery-logo.png" alt="JQuery Logo">
+            <img src="./assets/coding-logos/mysql-logo.png" alt="MySQL Logo">
+            <img src="./assets/coding-logos/vscode-logo.png" alt="VSCode Logo">
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <a href="./index.html"><img class="logo" src="./assets/company/hotbeansweb-logo.png"></a>
+            <p>© Copy Rights - Hot Beans Web</p>
+            <div class="socialmedia-logo">
+                <a href="https://en-gb.facebook.com/"><img src="./assets/socialmedia-logo/facebook-logo.png"></a>
+                <a href=""><img src="./assets/socialmedia-logo/instragram-logo.png"></a>
+                <a href=""><img src="./assets/socialmedia-logo/tiktok-logo.png"></a>
+                <a href=""><img src="./assets/socialmedia-logo/twitter-logo.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

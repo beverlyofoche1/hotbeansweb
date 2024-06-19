@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/png" href="./assets/company/favicon.png">
+    <script src="./script.js"></script>
+    <title>Courses</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img class="logo" src="./assets/company/hotbeansweb-logo.png"></a>
+        <nav>
+            <ul class="nav_bar">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./hiring.html">We Are Hiring!</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li class="icon" onclick=showSidebar() ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <ul class="side_bar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./hiring.html">We Are Hiring!</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <a class="side_bar-cta" href="./courses.html">Courses</a>
+            </ul>
+        </nav>
+        <a class="cta" href="./courses.html">Courses</a>
+    </header>
+    <div id="courses-container">
+        <div class="our-course">
+            <h1>Courses We Provide</h1>
+            <h2>Front-End Development</h2>
+            <ul>
+                <li><span>HTML & CSS:</span> Basic course covering the foundational languages for web structure and styling.</li>
+                <li><span>JavaScript:</span> Course focusing on making websites interactive and dynamic.</li>
+                <li><span>Frameworks & Libraries:</span> Course on popular tools like React, Angular, and Vue.js.</li>
+            </ul>
+            <h2>Back-End Development</h2>
+            <ul>
+                <li><span>Server-Side Languages:</span> Courses on languages like Node.js, Python (Django, Flask), 
+                    Ruby (Ruby on Rails), PHP, and Java.</li>
+                <li><span>Databases:</span> Courses on SQL (MySQL, PostgreSQL) and NoSQL (MongoDB) databases.</li>
+                <li><span>API Development:</span> Courses on RESTful APIs and GraphQL.</li>
+            </ul>
+            <h2>Full-Stack Development</h2>
+            <ul>
+                <li><span>Combined Courses</span>: Cover both front-end and back-end technologies, often including a 
+                    final project to build a complete web application.</li>
+            </ul>
+            <h2>Web Design</h2>
+            <ul>
+                <li><span>UI/UX Design:</span> Courses on user interface and user experience design principles.</li>
+                <li><span>Design Tools:</span> Courses on tools like Adobe XD, Figma, and Sketch.</li>
+                <li></li>
+            </ul>
+            <h2>DevOps and Deployment</h2>
+            <ul>
+                <li><span>Hosting and Deployment:</span> Courses on deploying websites using services like AWS, Heroku, and Netlify.</li>
+                <li><span>Continuous Integration/Continuous Deployment (CI/CD):</span> Courses on automating the deployment process.</li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="apply-container">
+            <a class="apply-button" href="./application.html">Apply Here</a>
+        </div>
+        
+        <div class="recommended-course">
+            <h2>Recommended Courses</h2>
+            <ul class="recommended-list">
+                <li><a href="https://www.codecademy.com/">Codecademy: </a>Comprehensive courses on HTML, CSS, JavaScript, and more.</li>
+                <li><a href="https://www.coursera.org/">Coursera: </a>Web development specializations offered by top universities.</li>
+                <li><a href="https://www.udemy.com/">Udemy: </a>Various courses covering both front-end and back-end development.</li>
+                <li><a href="https://www.freecodecamp.org/">FreeCodeCamp: </a>Free courses with hands-on projects and certifications.</li>
+                <li><a href="https://www.codewars.com/">CodeWars: </a>Improve coding knowledge through challenges.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="background-container">
+        <div class="coding-logos">
+            <img src="./assets/coding-logos/html-logo.png" alt="HTML Logo">
+            <img src="./assets/coding-logos/css-logo.png" alt="CSS Logo">
+            <img src="./assets/coding-logos/javascript-logo.png" alt="JavaScript Logo">
+            <img src="./assets/coding-logos/react-logo.png" alt="React Logo">
+            <img src="./assets/coding-logos/vue-logo.png" alt="Vue Logo">
+            <img src="./assets/coding-logos/angular-logo.png" alt="Angular Logo">
+            <img src="./assets/coding-logos/bootsrap-logo.png" alt="Bootstrap Logo">
+            <img src="./assets/coding-logos/gitlab-logo.png" alt="GitLab Logo">
+            <img src="./assets/coding-logos/node-logo.png" alt="Node Logo">
+            <img src="./assets/coding-logos/git-logo.png" alt="Git Logo">
+            <img src="./assets/coding-logos/sketch-logo.png" alt="Sketch Logo">
+            <img src="./assets/coding-logos/java-logo.png" alt="Java Logo">
+            <img src="./assets/coding-logos/github-logo.png" alt="GitHub Logo">
+            <img src="./assets/coding-logos/python-logo.png" alt="Python Logo">
+            <img src="./assets/coding-logos/figma-logo.png" alt="Figma Logo">
+            <img src="./assets/coding-logos/php-logo.png" alt="Php Logo">
+            <img src="./assets/coding-logos/mongodb-logo.png" alt="MongoDB Logo">
+            <img src="./assets/coding-logos/jquery-logo.png" alt="JQuery Logo">
+            <img src="./assets/coding-logos/mysql-logo.png" alt="MySQL Logo">
+            <img src="./assets/coding-logos/vscode-logo.png" alt="VSCode Logo">
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer-container">
+        <a href="./index.html"><img class="logo" src="./assets/company/hotbeansweb-logo.png"></a>
+        <p>© Copy Rights - Hot Beans Web</p>
+        <div class="socialmedia-logo">
+            <a href="https://en-gb.facebook.com/"><img src="./assets/socialmedia-logo/facebook-logo.png"></a>
+            <a href=""><img src="./assets/socialmedia-logo/instragram-logo.png"></a>
+            <a href=""><img src="./assets/socialmedia-logo/tiktok-logo.png"></a>
+            <a href=""><img src="./assets/socialmedia-logo/twitter-logo.png"></a>
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/png" href="./assets/company/favicon.png">
+    <script src="./script.js"></script>
+    <title>Application</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img class="logo" src="./assets/company/hotbeansweb-logo.png"></a>
+        <nav>
+            <ul class="nav_bar">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./hiring.html">We Are Hiring!</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li class="icon" onclick=showSidebar() ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <ul class="side_bar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./hiring.html">We Are Hiring!</a></li>
+                <li class="main_page"><a href="./contact.html">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <a class="side_bar-cta" href="./courses.html">Courses</a>
+            </ul>
+        </nav>
+        <a class="cta" href="./courses.html">Courses</a>
+    </header>
+    <div class="form-title"><h1>Online Form Application</h1></div>
+    <div class="application-container">
+        <div class="form-container">
+            <form action="#">
+                <div class="form-subtitle">
+                    <h2>Personal Information</h2>
+                    <hr>
+                </div>
+                
+                <div class="personal_information">
+                    <div class="input_box">
+                        <label for="name">Full Name:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="input_box">
+                        <label for="address">Address:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="input_box">
+                        <label for="mobile">Mobile:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="input_box">
+                        <label for="email">Email:</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="input_box">
+                        <label for="dob">D.O.B:</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="input_box">
+                        <label for="insurance_number">National Insurance Number:</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <div class="form-subtitle">
+                    <h2>Employment Information</h2>
+                    <hr>
+                </div>
+                <div class="employment_information">
+                    <div class="check_box">
+                        <label for="desired-job">Desired Job:</label>
+    
+                        <input type="checkbox" id="trainee" name="desired-job" value="trainee">
+                        <label for="trainee">Trainee</label>
+    
+                        <input type="checkbox" id="junior" name="desired-job" value="junior">
+                        <label for="junior">Junior</label>
+                        
+                        <input type="checkbox" id="senior" name="desired-job" value="senior">
+                        <label for="senior">Senior</label>
+    
+                    </div>
+                    <div class="check_box">
+                        <label for="job-type">Job Type:</label>
+    
+                        <input type="checkbox" id="front-end" name="job-type" value="front-end">
+                        <label for="front-end">Front-End</label>
+    
+                        <input type="checkbox" id="back-end" name="job-type" value="back-end">
+                        <label for="back-end">Back-End</label>
+                        
+                        <input type="checkbox" id="full-stack" name="job-type" value="full-stack">
+                        <label for="full-stack">Full Stack</label>
+    
+                    </div>
+                    <div class="check_box">
+                        <label for="availability">Availability:</label>
+    
+                        <input type="checkbox" id="part-time" name="job-type" value="part-time">
+                        <label for="part-time">Full-Time</label>
+                        
+                        <input type="checkbox" id="part-time" name="job-type" value="part-time">
+                        <label for="part-time">Part-Time</label>
+                        
+                        <input type="checkbox" id="other" name="job-type" value="other">
+                        <label for="other">Other</label>
+                        
+                    </div>
+                    <div class="check_box">
+                        <label for="relocation">Willingness to Relocate:</label>
+    
+                        <input type="radio" id="yes" name="relocation" value="yes">
+                        <label for="yes">Yes</label>
+                        
+                        <input type="radio" id="no" name="relocation" value="no">
+                        <label for="no">No</label>
+    
+                    </div>
+                    <div class="check_box">
+                        <label for="work">Right to Work:</label>
+    
+                        <input type="radio" id="yes" name="work" value="yes" required>
+                        <label for="yes">Yes</label>
+                        
+                        <input type="radio" id="no" name="work" value="no" required>
+                        <label for="no">No</label>
+                        
+                    </div>
+                    <div class="file">
+                        <label for="resume">Upload CV:</label>
+                        <input type="file" id="resume" name="resume"  required>
+                    </div>
+                </div>
+                <div class="form-subtitle">
+                    <h2>Qualifications</h2>
+                    <hr>
+                </div>
+                <div class="qualification">
+                    <div class="file">
+                        <label for="qualification-file">Upload Qualifications:</label>
+                        <input type="file" id="qualification-file" name="qualification-file" multiple required>
+                    </div>
+                </div>
+                <div class="form-submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="background-container">
+        <div class="coding-logos">
+            <img src="./assets/coding-logos/html-logo.png" alt="HTML Logo">
+            <img src="./assets/coding-logos/css-logo.png" alt="CSS Logo">
+            <img src="./assets/coding-logos/javascript-logo.png" alt="JavaScript Logo">
+            <img src="./assets/coding-logos/react-logo.png" alt="React Logo">
+            <img src="./assets/coding-logos/vue-logo.png" alt="Vue Logo">
+            <img src="./assets/coding-logos/angular-logo.png" alt="Angular Logo">
+            <img src="./assets/coding-logos/bootsrap-logo.png" alt="Bootstrap Logo">
+            <img src="./assets/coding-logos/gitlab-logo.png" alt="GitLab Logo">
+            <img src="./assets/coding-logos/node-logo.png" alt="Node Logo">
+            <img src="./assets/coding-logos/git-logo.png" alt="Git Logo">
+            <img src="./assets/coding-logos/sketch-logo.png" alt="Sketch Logo">
+            <img src="./assets/coding-logos/java-logo.png" alt="Java Logo">
+            <img src="./assets/coding-logos/github-logo.png" alt="GitHub Logo">
+            <img src="./assets/coding-logos/python-logo.png" alt="Python Logo">
+            <img src="./assets/coding-logos/figma-logo.png" alt="Figma Logo">
+            <img src="./assets/coding-logos/php-logo.png" alt="Php Logo">
+            <img src="./assets/coding-logos/mongodb-logo.png" alt="MongoDB Logo">
+            <img src="./assets/coding-logos/jquery-logo.png" alt="JQuery Logo">
+            <img src="./assets/coding-logos/mysql-logo.png" alt="MySQL Logo">
+            <img src="./assets/coding-logos/vscode-logo.png" alt="VSCode Logo">
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <a href="./index.html"><img class="logo" src="./assets/company/hotbeansweb-logo.png"></a>
+            <p>© Copy Rights - Hot Beans Web</p>
+            <div class="socialmedia-logo">
+                <a href="https://en-gb.facebook.com/"><img src="./assets/socialmedia-logo/facebook-logo.png"></a>
+                <a href=""><img src="./assets/socialmedia-logo/instragram-logo.png"></a>
+                <a href=""><img src="./assets/socialmedia-logo/tiktok-logo.png"></a>
+                <a href=""><img src="./assets/socialmedia-logo/twitter-logo.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

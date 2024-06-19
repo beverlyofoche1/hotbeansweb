@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/png" href="./assets/company/favicon.png">
+    <script src="./script.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img class="logo" src="./assets/company/hotbeansweb-logo.png"></a>
+        <nav>
+            <ul class="nav_bar">
+                <li class="main_page"><a href="./index.html">Home</a></li>
+                <li><a href="./hiring.html">We Are Hiring!</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li class="icon" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <ul class="side_bar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li class="main_page"><a href="./index.html">Home</a></li>
+                <li><a href="./hiring.html">We Are Hiring!</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <a class="side_bar-cta" href="./courses.html">Courses</a>
+            </ul>
+        </nav>
+        <a class="cta" href="./courses.html">Courses</a>
+    </header>
+    <h1><span class="hot">HOT</span> BEANS <span class="web">WEB</span></h1>
+    
+    <div class="hero-container">
+        <div class="hero-left">
+            <h2>Join Our Team at <span class="hot">Hot</span> Beans <span class="web">Web</span></h2>
+            <p>Welcome to Hot Beans Web! We are a leading web development 
+                company dedicated to creating cutting-edge websites and web 
+                applications. Our mission is to deliver innovative solutions 
+                that exceed our clients' expectations. At Hot Beans Web, we 
+                value creativity, collaboration, and continuous learning. 
+                Join us and be a part of a dynamic team that is shaping the 
+                future of the web.
+                <br><a class="learn-more" href="./about.html">Learn More...</a> 
+            </p>
+        </div>
+        <div class="hero-right">
+            <img class="hero-image" src="./assets/company/hero_image.jpg">
+        </div>
+    </div>
+
+    <div class="service-container">
+        <h2>Our Serivces</h2>
+        <p>Our expertise lies in developing websites tailored to meet individual business needs. We have a strong 
+            focus on building reliable and expandable e-commerce solutions to boost sales. Our UI/UX design services 
+            prioritize user-friendly designs that improve user interaction and satisfaction. Furthermore, we 
+            specialize in crafting inventive mobile web applications for both Android and iOS. To uphold the 
+            seamless operation of your online resources, we offer continual maintenance and support.</p>
+    </div>
+    
+    <div class="team-container">
+        <div class="team-title"><h2>Our Team</h2></div>
+        <div class="team">
+            
+            <div class="team-people">
+                <img src="./assets/team/MarkPhillips.png">
+                <h3>Lead Developer</h4>
+                <h4>Mark Phillips</h4>
+                <p>I have a strong passion for developing creative solutions and bringing 
+                    concepts to life. My enthusiasm for programming and ability to solve 
+                    challenges drive me to constantly push the limits of web development.</p>
+            </div>
+            <div class="team-people">
+                <img src="./assets/team/DylanPatel.png">
+                <h3>UI/UX Designer</h3>
+                <h4>Dylan Patel</h4>
+                <p>Creating an intuitive and enjoyable experience for users is a core aspect
+                    of design, going beyond just aesthetics. In every project I take on, I 
+                    aim to merge functionality with aesthetics.</p>
+            </div>
+            <div class="team-people">
+                <img src="./assets/team/LelandManigo.png">
+                <h3>Project Manager</h3>
+                <h4>Leland Manigo</h4>
+                <p>Ensuring that every project is completed on time, within budget, and to the 
+                    highest quality standards is my top priority. I believe that effective project 
+                    management is crucial for success.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <div class="slider-left">
+            <svg class="slider" onclick="prevSlide()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+        </div>
+        <div class="testimonial-content">
+            <div class="testimonial-box">
+                <div class="testimonial-box-left">
+                    <img src="./assets/client-assets/testimonial-image.jpg" alt="Image #1">
+                </div>
+                <div class="testimonial-box-right">
+                    <div>
+                        <h2>Testimonial</h2>
+                    </div>
+                    <div class="testimonial-text">
+                        <p>"We are quite satisfied with Hot Beans Web's services. From our first meeting to the website's official release, 
+                            their team's professionalism, creativity, and expertise in website designing is amazing. They took the time to 
+                            fully understand our specific needs and produced a wonderfully crafted, really easy-to-use website that was beyond 
+                            our expectations. Our online presence has significantly improved, resulting in a rise in traffic and engagement." 
+                            <span> • Nyla Dona</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-right">
+            <svg class="slider" onclick="nextSlide()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+        </div>
+    </div>
+
+    <div class="trainee-container">
+        <div class="trainee-title"><h2>Meet Our Trainees</h2></div>
+        <div class="tranee">
+            <div class="trainee-people">
+                <img src="./assets/team/jane_doe.jpg" alt="Image of Jane Doe">
+                <h4>Jane Doe</h4>
+                <p>Jane graduated with a degree in Computer Science and joined us as a trainee in 2023. She is passionate 
+                    about front-end development and has contributed to several key projects.
+                </p>
+            </div>
+            <div class="trainee-people">
+                <img src="./assets/team/john_smith.jpg" alt="Image of John Smith">
+                <h4>John Smith</h4>
+                <p>John has a diploma in Web Development and is an expert in back-end technologies. He joined our team in 
+                    early 2024 and has been instrumental in optimizing our server architectures.
+                </p>
+            </div>
+            <div class="trainee-people">
+                <img src="./assets/team/emma_brown.png" alt="Image of Emma Brown">
+                <h4>Emma Brown</h4>
+                <p>Emma, with a background in graphic design, transitioned to web development and has excelled in 
+                    creating visually stunning websites.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="background-container">
+        <div class="coding-logos">
+            <img src="./assets/coding-logos/html-logo.png" alt="HTML Logo">
+            <img src="./assets/coding-logos/css-logo.png" alt="CSS Logo">
+            <img src="./assets/coding-logos/javascript-logo.png" alt="JavaScript Logo">
+            <img src="./assets/coding-logos/react-logo.png" alt="React Logo">
+            <img src="./assets/coding-logos/vue-logo.png" alt="Vue Logo">
+            <img src="./assets/coding-logos/angular-logo.png" alt="Angular Logo">
+            <img src="./assets/coding-logos/bootsrap-logo.png" alt="Bootstrap Logo">
+            <img src="./assets/coding-logos/gitlab-logo.png" alt="GitLab Logo">
+            <img src="./assets/coding-logos/node-logo.png" alt="Node Logo">
+            <img src="./assets/coding-logos/git-logo.png" alt="Git Logo">
+            <img src="./assets/coding-logos/sketch-logo.png" alt="Sketch Logo">
+            <img src="./assets/coding-logos/java-logo.png" alt="Java Logo">
+            <img src="./assets/coding-logos/github-logo.png" alt="GitHub Logo">
+            <img src="./assets/coding-logos/python-logo.png" alt="Python Logo">
+            <img src="./assets/coding-logos/figma-logo.png" alt="Figma Logo">
+            <img src="./assets/coding-logos/php-logo.png" alt="Php Logo">
+            <img src="./assets/coding-logos/mongodb-logo.png" alt="MongoDB Logo">
+            <img src="./assets/coding-logos/jquery-logo.png" alt="JQuery Logo">
+            <img src="./assets/coding-logos/mysql-logo.png" alt="MySQL Logo">
+            <img src="./assets/coding-logos/vscode-logo.png" alt="VSCode Logo">
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <a href="./index.html"><img class="logo" src="./assets/company/hotbeansweb-logo.png"></a>
+            <p>© Copy Rights - Hot Beans Web</p>
+            <div class="socialmedia-logo">
+                <a href="https://en-gb.facebook.com/"><img src="./assets/socialmedia-logo/facebook-logo.png"></a>
+                <a href=""><img src="./assets/socialmedia-logo/instragram-logo.png"></a>
+                <a href=""><img src="./assets/socialmedia-logo/tiktok-logo.png"></a>
+                <a href=""><img src="./assets/socialmedia-logo/twitter-logo.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
